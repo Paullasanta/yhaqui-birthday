@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz 24 ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="menu">
+    <button data-section="book">📖 Poemas</button>
+    <button data-section="gallery">📷 Recuerdos</button>
+    <button data-section="music">🎵 Canciones</button>
+    <button data-section="pdf">📄 Carta</button>
+  </nav>
+
+  <div class="section active" id="book">
+    <h1 class="title">Feliz Cumpleaños, mi amor ❤️</h1>
+    <h3 class="subtitle">24 años y cada día más increíble</h3>
+    <div class="book-container">
+      <div class="book" id="book-pages">
+        <div class="page active">
+          <div class="page-content">
+            <h2>Poema 1</h2>
+            <p>"Eres mi sol en días grises,<br />mi refugio en la tormenta,<br />la melodía que calma mi alma."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Poema 2</h2>
+            <p>"I love you not because of who you are,<br />but because of who I am when I am with you.<br />Forever and always, you are my dream."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Poema 3</h2>
+            <p>"Te amé ayer, te amo hoy,<br />y si me das la oportunidad,<br />te amaré toda la eternidad."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Poema 4</h2>
+            <p>"You are my today and all of my tomorrows,<br />the one I hold when the world feels hollow,<br />my love, my life, my endless vow."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Pablo Neruda</h2>
+            <p>"Me gustas cuando callas porque estás como ausente,<br />y me oyes desde lejos, y mi voz no te toca.<br />Parece que los ojos se te hubieran volado<br />y parece que un beso te cerrara la boca."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Mario Benedetti</h2>
+            <p>"Te quiero porque tus manos<br />trabajan por la justicia,<br />y si beso tu boca gloriosa<br />es porque estás en mi lucha."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Gustavo Adolfo Bécquer</h2>
+            <p>"El alma que hablar puede con los ojos,<br />también puede besar con la mirada.<br />Por una mirada, un mundo;<br />por una sonrisa, un cielo."</p>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2>Pablo Neruda</h2>
+            <p>"Para mi corazón basta tu pecho,<br />para tu libertad bastan mis alas.<br />Desde mi boca llegará hasta el cielo<br />lo que estaba dormido sobre tu alma."</p>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" disabled>⬅</button>
+        <span id="page-counter">1/8</span>
+        <button id="nextBtn">➡</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Nuestros Recuerdos 💕</h2>
+    <div class="gallery">
+      <img src="fotos/foto1.jpeg" alt="Recuerdo 1" />
+      <img src="fotos/foto2.jpeg" alt="Recuerdo 2" />
+      <img src="fotos/foto3.jpeg" alt="Recuerdo 3" />
+      <img src="fotos/foto4.jpeg" alt="Recuerdo 4" />
+      <img src="fotos/foto21.jpeg" alt="Recuerdo 5" />
+      <img src="fotos/foto10.jpeg" alt="Recuerdo 6" />
+      <img src="fotos/foto13.jpeg" alt="Recuerdo 7" />
+      <img src="fotos/foto20.jpeg" alt="Recuerdo 8" />
+      <img src="fotos/foto19.jpeg" alt="Recuerdo 9" />
+      <img src="fotos/foto14.jpeg" alt="Recuerdo 10" />
+    </div>
+  </div>
+
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+  </div>
+
+  <div class="section" id="music">
+    <h2>🎶 Canciones para Ti</h2>
+    <div class="videos">
+      <div class="video-container">
+        <h3 class="video-title">Zoé - Luna</h3>
+        <iframe src="https://www.youtube.com/embed/6W4L2O-JQ-w" 
+          title="Zoé - Luna" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-container">
+        <h3 class="video-title">Rafo Ráez - Ella anda dormida</h3>
+        <iframe src="https://www.youtube.com/embed/9muzyOd4Lh8" 
+          title="Ella anda dormida - Rafo Ráez" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-container">
+        <h3 class="video-title">Grupo 5 - Amor Vuelve</h3>
+        <iframe src="https://www.youtube.com/embed/UvvGlY_hnT4" 
+          title="Grupo 5 - Amor Vuelve" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-container">
+        <h3 class="video-title">Los Temerarios - Ven que te amo</h3>
+        <iframe src="https://www.youtube.com/embed/j-x1_t6gFbk" 
+          title="Los Temerarios - Ven que te amo" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-container">
+        <h3 class="video-title">Banda MS - Qué Maldición</h3>
+        <iframe src="https://www.youtube.com/embed/Z2sXk5OMIGk" 
+          title="Banda MS - Qué Maldición" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-container">
+        <h3 class="video-title">Adalberto Santiago - La Noche Más Linda</h3>
+        <iframe src="https://www.youtube.com/embed/5XYQjBs0D04" 
+          title="La Noche Más Linda - Adalberto Santiago" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="section" id="pdf">
+  <h2>📄 Una Carta para Ti</h2>
+  <div class="pdf-container">
+    <!-- Solución universal para PDF -->
+    <object data="pdfs/carta.pdf" type="application/pdf" class="pdf-viewer">
+      <p>Tu navegador no soporta PDFs. Por favor descarga la carta:</p>
+      <a href="pdfs/carta.pdf" download class="download-btn">📥 Descargar Carta</a>
+    </object>
+    <div class="pdf-alternatives">
+      <a href="pdfs/carta.pdf" target="_blank" class="alt-btn">🔍 Abrir en nueva ventana</a>
+      <a href="pdfs/carta.pdf" download class="alt-btn">📥 Descargar PDF</a>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
